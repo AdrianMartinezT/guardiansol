@@ -60,10 +60,17 @@ const Home = () => {
     return (
         <div className="h-screen bg-black text-white">
             {/* Barra superior */}
-            <div className="bg-yellow-500 flex justify-between items-center px-6">
+            <div className="bg-yellow-500 flex justify-between items-center px-6" style={{paddingLeft: '3.5rem'}}  >
                 <div className="flex items-center">
-                    <img src="https://guardiandefi.xyz/assets/GuardianBlack-469d1f43.png" style={{ width: 300 }} alt="Logo" />
+                    <img src="https://guardiandefi.xyz/assets/GuardianBlack-469d1f43.png" style={{ width: 164 }} alt="Logo" />
                 </div>
+                <div className="bg-yellow-400 rounded-lg px-4 py-2 ml-6 flex items-center space-x-2">
+                        <span className="text-black font-bold"> {balance} SOLANA</span>
+                        <span className="text-black font-bold">
+                           
+                        </span>
+                        <span className="text-black font-bold"> 0 gSOL</span>
+                    </div>
                 <div>
                     {publicKey ? (
                         <button
